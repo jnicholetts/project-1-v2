@@ -9,10 +9,11 @@
     <!--Bootstrap CSS ends-->
     <link rel="stylesheet" href="styles.css">
     <script type="text/javascript"></script>
-    <title>Hello, world!</title>
+    <title>About Josh Nicholetts, web developer</title>
   </head>
   <body>
-<div class="container">
+<div class="flex-wrapper">
+<div class="container justify-content-center">
   <header>
   <nav>
     <ul class="nav nav-tabs">
@@ -21,8 +22,8 @@
           <a class="a-nav dropdown-item" href="#">Me</a>
           <a class="a-nav dropdown-item" href="#">My Skills</a>
           <a class="a-nav dropdown-item" href="#">My Hobbies</a></div></li>
-      <li class="nav-item"><a class="a-nav nav-link" href="/portfolio.html">Portfolio</a></li>
-      <li class="nav-item"><a class="a-nav nav-link" href="/contactme.html">Contact me</a></li>
+      <li class="nav-item"><a class="a-nav nav-link" href="./portfolio.html">Portfolio</a></li>
+      <li class="nav-item"><a class="a-nav nav-link" href="./contactme.html">Contact me</a></li>
     </ul>
   </nav>
 </header>
@@ -31,8 +32,9 @@
   <h1>Josh Nicholetts</h1>
   <h2>Web Developer</h2>
 </div>
-<div class="d-flex row align-items-center container-fluid" style="border: 1px solid black;">
-  <div class="col-sm-9 ">
+<div class="d-flex row align-items-center container-fluid popout">
+  <div id="AboutMe" class="col-sm-9">
+    <h2 class="text-center">About me</h2>
     <p>Hello! I am Josh, an aspiring Front End Web Developer and Ecommerce Co-ordinator.<br><br>
       Currently I run the website for a medium-sized wine retailer in the UK, but I am looking to move into full-time web development soon.<br><br>
       <a href="../Page3.html">Contact me</a> to discuss websites, E-commerce, or anything geeky!</p>
@@ -43,12 +45,13 @@
   <br><br>
 
 </div>
-<div class="d-flex row justify-content-center container-fluid" style="border: 1px solid black;">
+<div class="d-flex justify-content-center">
+<div id="MySkills" class="d-flex row justify-content-center container-fluid popout col-sm-6">
   <div class="text-center">
-    <p>My Skills</p><br>
-    <p>Proficient</p>
+    <h2>Professional Skills</h2>
+    <p style="font-weight: bold;">Proficient</p>
   </div>
-  <div class="col-sm-6" style="border: 1px solid black;">
+  <div class="col-sm-6">
     <ul>
       <li>HTML5</li>
       <li>CSS3</li>
@@ -56,7 +59,7 @@
       <li>MS Visual Studio</li>
     </ul>
   </div>
-  <div class="col-sm-6" style="border: 1px solid black;">
+  <div class="col-sm-6">
     <ul>
       <li>Google Analytics
         <ul><li>Including Google Sheets Integration</li></ul>
@@ -66,21 +69,55 @@
     </ul>
   </div>
   <div class="text-center">
-    <p>Developing</p>
+    <p style="font-weight: bold; ">Developing</p>
   </div>
-  <div class="col-sm-12 justify-content-center" style="border: 1px solid black;">
+  <div class="col-sm-12 justify-content-center">
     <ul class="list-group list-group-horizontal-sm justify-content-center">
-      <li class="skill">Javascript</li>
-      <li class="skill">Python</li>
-      <li class="skill">Big Data Management</li>
-      <li class="skill">Ethical Hacking</li>
+      <li class="skill">&#8226;Javascript</li>
+      <li class="skill">&#8226;Python</li>
+      <li class="skill">&#8226;Big Data Management</li>
+      <li class="skill">&#8226;Ethical Hacking</li>
+    </ul>
+  </div>
+  <div class="text-center" style="padding-top: 20px;">
+    <p style="font-weight: bold; ">Education</p>
+  </div>
+  <span><strong>University of Central Lancashire 2010 - 2013:</strong> Upper Second in Education Studies and Counselling and Psychotherapy studies.</span>
+</div>
+</div>
+
+
+<div id="MyHobbies" class="d-flex justify-content-center">
+<div class="d-flex row justify-content-center container-fluid popout col-sm-6">
+  <div class="text-center">
+    <h2>My Hobbies</h2>
+  </div>
+  <div class="col-sm-6">
+    <ul>
+      <li>Cooking</li>
+      <li>Painting</li>
+      <li>Running</li>
+    </ul>
+  </div>
+  <div class="col-sm-6">
+    <ul>
+      <li>Board Games</li>
+      <li>Gardening</li>
+      <li>DIY</li>
     </ul>
   </div>
 </div>
+</div>
+
   
 
-
-</div>    
+</div>  
+<footer class="row">
+    <div class="d-flex justify-content-center">
+      Joshua Nicholetts &copy; 2022
+    </div>
+  </footer>
+</div>  
     <!--Bootstrap Script Bundle-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>

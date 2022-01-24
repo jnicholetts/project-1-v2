@@ -9,7 +9,7 @@
 <!--Bootstrap CSS ends-->
 <link rel="stylesheet" href="styles.css">
 <script type="text/javascript"></script>
-<title>Hello, world!</title>
+<title>Get in touch - Contact Josh Nicholetts</title>
   </head>
   <body>
 <div class="container">
@@ -31,15 +31,33 @@
   <h2 class="text-center"> Please get in touch with any questions or requests and I'll be in touch as soon as possible.</h2>
   <div class="d-flex justify-content-center">
   <div id="ContactForm" class="popout d-flex col-sm-4">
-    <form>
-      <p>Your name:</p>
-      <input type="text" id="firstNameField" value="First"/><input type="text" id="lastNameField" value="Last">
-      <p>Your email address</p>
-      <input type="email" id="emailField"/>
-      <p>Why are you getting in touch?</p>
+    <form action="#" method="post">
+      <p>Title</p>
+      <select name="title" onchange='CheckTitle(this.value);'>
+        <option>Title</option>
+        <option value="Mr" id="mr">Mr</option>
+        <option value="Mrs" id="mrs">Mrs</option>
+        <option value="Ms" id="ms">Ms</option>
+        <option value="Mx" id="mx">Mr</option>
+        <option value="Other" id="Other">Other</option>
+      </select>
+      <input type="text" id="cTitle" name="cTitle" style="display:none"/><br>
+      <label for="name">Your name:</label><br>
+      <input type="text" id="firstNameField" value="First"/><input type="text" id="lastNameField" value="Last"><br>
+      <label for="email">Your email address</label><br>
+      <input type="email" name="email" id="emailField"/><br>
+      <label for="reason">Why are you getting in touch?</label><br>
       <input type="text" id="reasonField" style="width:300px; height:400px;"/><br>
-      <input type="button" value="Submit" id="submitButton"/>
-    
+      <input type="submit" value="Submit" id="submitButton"/>
+   
+   <script type="text/javascript">
+      function CheckTitle(val){
+       var element=document.getElementById('cTitle');
+       if(val=='title'||val=='Other')
+         element.style.display='block';
+       else  
+         element.style.display='none';
+      }</script>
     </form>
   </div> 
 
